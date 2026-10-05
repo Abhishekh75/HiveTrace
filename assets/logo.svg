@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="honeyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4C464" />
+      <stop offset="100%" stop-color="#E6A13D" />
+    </linearGradient>
+    <linearGradient id="forestGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D5A32" />
+      <stop offset="100%" stop-color="#1A381C" />
+    </linearGradient>
+    <linearGradient id="goldSheen" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FFDE82" />
+      <stop offset="50%" stop-color="#E6A13D" />
+      <stop offset="100%" stop-color="#C57D1E" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#1E3F20" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Circular subtle ambient backing -->
+  <circle cx="256" cy="256" r="236" fill="#FFF8F4" stroke="#E2D9CE" stroke-width="3"/>
+  <circle cx="256" cy="256" r="222" fill="#FAF4EC" stroke="#E6A13D" stroke-opacity="0.25" stroke-dasharray="6 6" stroke-width="2"/>
+
+  <!-- Main Outer Shield Hexagon (Deep Forest Green with rounded geometry) -->
+  <g filter="url(#softShadow)">
+    <path d="M 256 58 
+             L 416 150 
+             A 12 12 0 0 1 422 160 
+             L 422 344 
+             A 12 12 0 0 1 416 354 
+             L 256 446 
+             A 12 12 0 0 1 250 446 
+             L 90 354 
+             A 12 12 0 0 1 84 344 
+             L 84 160 
+             A 12 12 0 0 1 90 150 
+             L 250 58 
+             A 12 12 0 0 1 256 58 Z" 
+          fill="url(#forestGrad)" 
+          stroke="url(#goldSheen)" 
+          stroke-width="7" 
+          stroke-linejoin="round"/>
+  </g>
+
+  <!-- Concentric Inner Blockchain Honeycomb Ring -->
+  <path d="M 256 94 
+           L 386 168 
+           L 386 326 
+           L 256 400 
+           L 126 326 
+           L 126 168 Z" 
+        fill="none" 
+        stroke="#E6A13D" 
+        stroke-opacity="0.4" 
+        stroke-width="3" 
+        stroke-linecap="round"/>
+
+  <!-- Traceability / Blockchain Connectivity Nodes at Vertices -->
+  <circle cx="256" cy="94" r="7" fill="#F4C464" stroke="#1A381C" stroke-width="2.5"/>
+  <circle cx="386" cy="168" r="7" fill="#F4C464" stroke="#1A381C" stroke-width="2.5"/>
+  <circle cx="386" cy="326" r="7" fill="#F4C464" stroke="#1A381C" stroke-width="2.5"/>
+  <circle cx="256" cy="400" r="7" fill="#F4C464" stroke="#1A381C" stroke-width="2.5"/>
+  <circle cx="126" cy="326" r="7" fill="#F4C464" stroke="#1A381C" stroke-width="2.5"/>
+  <circle cx="126" cy="168" r="7" fill="#F4C464" stroke="#1A381C" stroke-width="2.5"/>
+
+  <!-- Inner Amber Honeycomb Plate -->
+  <path d="M 256 126 
+           L 358 184 
+           L 358 308 
+           L 256 366 
+           L 154 308 
+           L 154 184 Z" 
+        fill="#234725" 
+        stroke="#E6A13D" 
+        stroke-width="2"/>
+
+  <!-- Stylized Monogram & Bio-Heraldic Bee Form -->
+  <!-- Left Wing (Translucent Amber Petal) -->
+  <path d="M 230 220 C 170 175 145 220 180 255 C 205 278 234 246 230 220 Z" 
+        fill="url(#honeyGrad)" 
+        fill-opacity="0.88" 
+        stroke="#FFE89E" 
+        stroke-width="2"/>
+  <path d="M 226 234 C 185 205 168 230 192 250" 
+        stroke="#FAF4EC" 
+        stroke-width="1.8" 
+        stroke-opacity="0.6" 
+        fill="none"/>
+
+  <!-- Right Wing (Translucent Amber Petal) -->
+  <path d="M 282 220 C 342 175 367 220 332 255 C 307 278 278 246 282 220 Z" 
+        fill="url(#honeyGrad)" 
+        fill-opacity="0.88" 
+        stroke="#FFE89E" 
+        stroke-width="2"/>
+  <path d="M 286 234 C 327 205 344 230 320 250" 
+        stroke="#FAF4EC" 
+        stroke-width="1.8" 
+        stroke-opacity="0.6" 
+        fill="none"/>
+
+  <!-- Bee Head & Antennae -->
+  <!-- Antennae curving into cryptographic leaf hooks -->
+  <path d="M 246 195 C 236 172 216 174 220 162" 
+        stroke="#F4C464" 
+        stroke-width="3" 
+        stroke-linecap="round" 
+        fill="none"/>
+  <circle cx="220" cy="162" r="3.5" fill="#FFE89E"/>
+
+  <path d="M 266 195 C 276 172 296 174 292 162" 
+        stroke="#F4C464" 
+        stroke-width="3" 
+        stroke-linecap="round" 
+        fill="none"/>
+  <circle cx="292" cy="162" r="3.5" fill="#FFE89E"/>
+
+  <!-- Bee Head Crown -->
+  <circle cx="256" cy="198" r="16" fill="url(#honeyGrad)" stroke="#1A381C" stroke-width="2"/>
+  <circle cx="256" cy="198" r="7" fill="#1A381C"/>
+
+  <!-- Bee Thorax & Abdomen with Honey Gold & Forest Stripes (Hexagonal Drop Form) -->
+  <g>
+    <!-- Thorax -->
+    <path d="M 238 214 Q 256 210 274 214 Q 284 238 274 254 Q 256 258 238 254 Q 228 238 238 214 Z" 
+          fill="#1A381C" 
+          stroke="url(#goldSheen)" 
+          stroke-width="2.5"/>
+
+    <!-- Luminous Core Trace Diamond (IoT / Blockchain Heart) -->
+    <polygon points="256,222 265,234 256,246 247,234" fill="#FFDE82"/>
+
+    <!-- Abdominal Segment 1 (Gold) -->
+    <path d="M 235 260 Q 256 266 277 260 Q 282 278 273 286 Q 256 292 239 286 Q 230 278 235 260 Z" 
+          fill="url(#honeyGrad)" 
+          stroke="#1A381C" 
+          stroke-width="2"/>
+
+    <!-- Abdominal Segment 2 (Deep Forest) -->
+    <path d="M 240 290 Q 256 295 272 290 Q 275 304 268 312 Q 256 318 244 312 Q 237 304 240 290 Z" 
+          fill="#1A381C" 
+          stroke="url(#goldSheen)" 
+          stroke-width="1.8"/>
+
+    <!-- Stinger / Cryptographic Anchor Tip (Gold) -->
+    <path d="M 246 316 Q 256 320 266 316 L 256 338 Z" 
+          fill="url(#honeyGrad)" 
+          stroke="#1A381C" 
+          stroke-width="1.5"/>
+  </g>
+
+  <!-- Botanical Leaf Accents in Base of Shield -->
+  <path d="M 188 340 C 204 330 220 342 226 360 C 212 364 196 358 188 340 Z" fill="#2E5A36" opacity="0.9"/>
+  <path d="M 324 340 C 308 330 292 342 286 360 C 300 364 316 358 324 340 Z" fill="#2E5A36" opacity="0.9"/>
+
+  <!-- Circular Micro-Nodes Linking Chain Connection -->
+  <line x1="256" y1="338" x2="256" y2="394" stroke="#E6A13D" stroke-width="2.5" stroke-dasharray="3 3"/>
+  <circle cx="256" cy="370" r="3.5" fill="#FFE89E"/>
+</svg>
