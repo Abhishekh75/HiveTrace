@@ -1,0 +1,13 @@
+{
+  "name": "hivetrace",
+  "version": "1.0.0",
+  "description": "HiveTrace Forestry & Apiary Integrity System — SIH 2026 Honeychain Prototype",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx -y serve .",
+    "build": "echo 'Static site ready'"
+  },
+  "keywords": ["hivetrace", "honeychain", "telemetry", "provenance"],
+  "author": "Abhishekh Kushwaha",
+  "license": "MIT"
+}
