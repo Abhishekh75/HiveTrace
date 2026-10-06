@@ -2,9 +2,19 @@
 
 > **Forestry & Apiary Integrity System** | Built for SIH 2026 (Honeychain)
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-hivetrace.onrender.com-1E3F20?style=for-the-badge&logo=render&logoColor=white)](https://hivetrace.onrender.com)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Abhishekh75%2FHiveTrace-E6A13D?style=for-the-badge&logo=github&logoColor=black)](https://github.com/Abhishekh75/HiveTrace)
+
 HiveTrace is a decentralized agro-cryptographic provenance and hive telemetry platform designed to protect endemic bee colonies and verify honey purity from forest canopy to retail jar.
 
 ![HiveTrace Emblem](assets/logo.svg)
+
+---
+
+## 🌐 Live Application
+
+Access the live deployed prototype on Render:
+👉 **[https://hivetrace.onrender.com](https://hivetrace.onrender.com)**
 
 ---
 
@@ -49,10 +59,11 @@ HiveTrace is a decentralized agro-cryptographic provenance and hive telemetry pl
 - **Typography**: Google Fonts (*Epilogue*, *Manrope*, *JetBrains Mono*), Material Symbols Outlined.
 - **State Management**: Reactive in-browser store with event emitter system backed by `localStorage`.
 - **Routing**: Single Page Application (SPA) hash router with enter animations and auth guards.
+- **Hosting / Deployment**: Render Static Site (Auto-deployed from `main` branch).
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Local Development & Setup
 
 No build tools or heavy package installations required. Simply serve with any HTTP server:
 
@@ -89,6 +100,8 @@ npx serve .
 │   └── store.js                 # Reactive localStorage state store
 ├── index.html                   # HTML entrypoint
 ├── styles.css                   # HiveTrace design system stylesheet
+├── render.yaml                  # Render deployment blueprint
+├── package.json                 # Node package configuration
 ├── .gitignore                   # Ignored files
 └── README.md                    # Project documentation
 ```
