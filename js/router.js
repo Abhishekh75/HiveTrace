@@ -57,6 +57,12 @@ const Router = (() => {
     document.querySelectorAll('.nav-pill').forEach(pill => {
       pill.classList.toggle('active', pill.dataset.path === path);
     });
+    document.querySelectorAll('.drawer-nav-item').forEach(item => {
+      item.classList.toggle('active', item.dataset.path === path);
+    });
+    document.querySelectorAll('.bottom-nav-item').forEach(item => {
+      item.classList.toggle('active', item.dataset.path === path);
+    });
   }
 
   function init() {
