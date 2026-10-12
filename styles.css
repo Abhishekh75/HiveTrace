@@ -1674,12 +1674,12 @@ body {
 
 /* --- Tablet (<= 1024px) --- */
 @media (max-width: 1024px) {
-  .grid-4 { grid-template-columns: repeat(2, 1fr); }
-  .grid-12 { grid-template-columns: 1fr; }
+  .grid-4 { grid-template-columns: repeat(2, 1fr) !important; }
+  .grid-12 { grid-template-columns: 1fr !important; }
   .col-span-8, .col-span-7, .col-span-5, .col-span-4 { grid-column: span 12 !important; width: 100%; }
 }
 
-/* --- Mobile Landscape & Large Phones (<= 768px) --- */
+/* --- Mobile Landscape & Large Tablets (<= 768px) --- */
 @media (max-width: 768px) {
   :root {
     --margin: 1rem;
@@ -1709,10 +1709,10 @@ body {
   .user-profile .logout-quick-btn { display: none; }
   .user-avatar { width: 34px; height: 34px; }
 
-  .grid-4 { grid-template-columns: 1fr 1fr; }
-  .grid-3 { grid-template-columns: 1fr; }
-  .grid-2 { grid-template-columns: 1fr; }
-  .grid-12 { grid-template-columns: 1fr; }
+  .grid-4 { grid-template-columns: repeat(2, 1fr) !important; }
+  .grid-3 { grid-template-columns: 1fr !important; }
+  .grid-2 { grid-template-columns: 1fr !important; }
+  .grid-12 { grid-template-columns: 1fr !important; }
   .col-span-8, .col-span-7, .col-span-5, .col-span-4 { grid-column: span 12 !important; width: 100%; }
 
   .radio-card-group.cols-3,
@@ -1772,7 +1772,34 @@ body {
   }
 }
 
-/* --- Mobile Phones (<= 480px) --- */
+/* --- Mobile Smartphones & Narrow Screens (<= 640px) --- */
+@media (max-width: 640px) {
+  :root {
+    --margin: 0.875rem;
+    --gutter: 0.875rem;
+  }
+
+  .grid-4 { grid-template-columns: 1fr !important; }
+  .grid-3 { grid-template-columns: 1fr !important; }
+  .grid-2 { grid-template-columns: 1fr !important; }
+
+  .card {
+    padding: 16px 18px;
+    border-radius: var(--radius-lg);
+  }
+
+  .btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .login-layout {
+    padding: 20px 14px;
+    max-width: 100%;
+  }
+}
+
+/* --- Small Mobile Phones (<= 480px) --- */
 @media (max-width: 480px) {
   :root {
     --margin: 0.75rem;
@@ -1790,16 +1817,11 @@ body {
   .font-headline-sm { font-size: 16px; line-height: 22px; }
   .font-data-metric { font-size: 22px; line-height: 26px; }
 
-  .grid-4 { grid-template-columns: 1fr; }
+  .grid-4 { grid-template-columns: 1fr !important; }
 
   .card {
     padding: 16px;
     border-radius: var(--radius-lg);
-  }
-
-  .btn {
-    padding: 8px 14px;
-    font-size: 13px;
   }
 
   .login-layout {
